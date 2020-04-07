@@ -4,7 +4,7 @@ Simple vim plugin to toggle fullscreen for a buffer using vim's tabpage feature
 ## Installing
 Using vim-plug:  
 ```
-Plug 'soulthym/focus-buffer'
+Plug 'soulthym/vim-focus-buffer'
 ```
 
 ## Usage
