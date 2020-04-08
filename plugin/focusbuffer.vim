@@ -1,7 +1,7 @@
 function! MaximizeBuffer()
     if !exists('t:maxtab')
         0tab split
-        let t:maxtab=0
+        let t:maxtab=1
         redraw
         echo "Maximised " . @%
     else
