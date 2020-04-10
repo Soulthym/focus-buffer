@@ -1,11 +1,11 @@
 function! MaximizeBuffer()
-    if !exists('t:maxtab')
+    if !exists('w:maxtab')
         0tab split
-        let t:maxtab=1
+        let w:maxtab=1
         redraw
         echo "Maximised " . @%
     else
-        tabc
+        quit
         redraw
         echo "Minimized " . @%
     endif
