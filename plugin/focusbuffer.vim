@@ -15,7 +15,6 @@ function! MaximizeBuffer()
 endfunction
 
 " Make full screen, exit by closing the tab, or leaving it open for later use
-nnoremap <c-w><c-m> :call MaximizeBuffer()<CR>
+nnoremap <c-w><c-m> :call MaximizeBuffer()<cr>
 nmap <c-w>m <c-w><c-m> 
-nnoremap <F2> :echo exists('t:maxtab')<CR>
 " DONT REMAP <c-m> ! it is the char sequence used by your terminal for <CR> (the Enter key)
