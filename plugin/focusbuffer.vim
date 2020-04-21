@@ -1,17 +1,14 @@
 function! MaximizeBuffer()
-    if !exists('t:maxtab')
+    if !exists('w:maxtab')
         0tab split
-        redraw
-        let t:maxtab=1
+        let w:maxtab=1
         redraw
         echo "Maximised " . @%
     else
-        tabc
+        quit
         redraw
         echo "Minimized " . @%
     endif
-    "nnoremap <c-w><c-m> :1tabc<CR>
-    "au WinEnter * ++once nnoremap <c-w><c-m> :call MaximizeBuffer()<CR>
 endfunction
 
 " Make full screen, exit by closing the tab, or leaving it open for later use
